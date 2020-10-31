@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/theme/selected_button_theme.tres" type="StyleBox" id=1]
+[ext_resource path="res://assets/theme/non_selected_button.tres" type="StyleBox" id=2]
+[ext_resource path="res://assets/fonts/joystix monospace.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/scripts/button.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="Button" type="Button"]
+margin_top = -1.25992
+margin_right = 150.0
+margin_bottom = 48.7401
+rect_min_size = Vector2( 150, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+text = "Button"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
